@@ -112,10 +112,10 @@ Member:
 * Update Task Status
 
 Live Application:
-PASTE_YOUR_LIVE_URL
+https://team-task-manager-neon-beta.vercel.app/
 
 GitHub Repository:
-PASTE_YOUR_GITHUB_REPOSITORY_LINK
+https://github.com/Mhksingla/team-task-manager
 
 Author:
 Mehak
