@@ -5,6 +5,14 @@ function Dashboard(){
 
     const [data,setData] = useState({});
 
+    const logout = ()=>{
+
+        localStorage.removeItem("token");
+
+        window.location.reload();
+
+    };
+
     useEffect(()=>{
 
         fetchDashboard();
@@ -38,15 +46,33 @@ function Dashboard(){
 
         <div style={{padding:"30px"}}>
 
-            <h1>Dashboard</h1>
+            <h1>Team Task Manager Dashboard</h1>
 
-            <h3>Total Tasks: {data.totalTasks}</h3>
+            <button onClick={logout}>
+                Logout
+            </button>
 
-            <h3>Completed Tasks: {data.completedTasks}</h3>
+            <hr/>
 
-            <h3>Pending Tasks: {data.pendingTasks}</h3>
+            <h2>Total Tasks: {data.totalTasks}</h2>
 
-            <h3>Overdue Tasks: {data.overdueTasks}</h3>
+            <h2>Completed Tasks: {data.completedTasks}</h2>
+
+            <h2>Pending Tasks: {data.pendingTasks}</h2>
+
+            <h2>Overdue Tasks: {data.overdueTasks}</h2>
+
+            <hr/>
+
+            <h2>Project Management</h2>
+
+            <p>Create and manage projects using backend APIs.</p>
+
+            <hr/>
+
+            <h2>Task Management</h2>
+
+            <p>Create tasks and update status using Thunder Client.</p>
 
         </div>
 

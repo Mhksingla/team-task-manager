@@ -23,7 +23,7 @@ function Signup(){
         }
         catch(error){
 
-            alert("Signup Failed");
+            alert(error.response.data.message);
 
         }
 

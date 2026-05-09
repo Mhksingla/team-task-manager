@@ -18,11 +18,12 @@ function Login(){
             localStorage.setItem("token",res.data.token);
 
             alert("Login Successful");
+            window.location.reload();
 
         }
         catch(error){
 
-            alert("Login Failed");
+            alert(error.response.data.message);
 
         }
 
